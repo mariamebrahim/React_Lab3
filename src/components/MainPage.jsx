@@ -1,9 +1,9 @@
 import { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import AddProduct from "./routers/Adding.component";
-import DetailsProduct from "./routers/Details.component";
-import EditProduct from "./routers/Edit.component";
-import ListProduct from "./routers/ProductsTable.component";
+import { BrowserRouter ,Routes,Route } from "react-router-dom";
+import AddProduct from "./routeres/Adding";
+import DetailsProduct from "./routeres/Details";
+import EditProduct from "./routeres/Edit";
+import ListProduct from "./routeres/ProductsTable";
 class MainPage extends Component {
   state = {
     products: this.props.products,
@@ -25,7 +25,8 @@ class MainPage extends Component {
   };
   render() {
     return (
-      <Router>
+      <BrowserRouter>
+      <Routes>
         <Route
           component={() => (
             <ListProduct
@@ -49,7 +50,9 @@ class MainPage extends Component {
           path="/Add"
           exact
         ></Route>
-      </Router>
+      </Routes>
+      </BrowserRouter>
+     
     );
   }
 }

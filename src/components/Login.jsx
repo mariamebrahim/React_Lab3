@@ -1,8 +1,8 @@
 import { Component } from "react";
-import App from "../App.js";
-class LoginIn extends Component {
+import App from "../App.jsx";
+class Login extends Component {
   state = {
-    user: { name: "mohamed", pass: "123" },
+    user: { name: "mariam", pass: "123" },
     txtname: "",
     txtpass: "",
     isValid: false,
@@ -13,8 +13,6 @@ class LoginIn extends Component {
   onSubmit = (e) => {
     e.preventDefault();
     let obj = { name: this.state.txtname, pass: this.state.txtpass };
-    console.log("inside Submit obj", obj);
-    console.log("inside Submit stateuser", this.state.user.name);
     if (
       this.state.user.name === obj.name &&
       this.state.user.pass === obj.pass
@@ -58,4 +56,4 @@ class LoginIn extends Component {
   }
 }
 
-export default LoginIn;
+export default Login;

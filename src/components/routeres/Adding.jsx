@@ -70,3 +70,5 @@ class AddProduct extends React.Component {
     );
   }
 }
+
+export default AddProduct;

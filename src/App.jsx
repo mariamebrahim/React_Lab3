@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
-import MainPage from "./components/MainPage.component";
+import MainPage from "./components/MainPage";
 let myArr = [
   {
     id: 1,
