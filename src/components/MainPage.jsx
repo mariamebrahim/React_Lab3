@@ -4,6 +4,7 @@ import AddProduct from "./routeres/Adding";
 import DetailsProduct from "./routeres/Details";
 import EditProduct from "./routeres/Edit";
 import ListProduct from "./routeres/ProductsTable";
+const props=[];
 class MainPage extends Component {
   state = {
     products: this.props.products,
@@ -28,25 +29,25 @@ class MainPage extends Component {
       <BrowserRouter>
       <Routes>
         <Route
-          component={() => (
+          element={
             <ListProduct
               products={this.state.products}
               onDelete={this.onDelete}
             ></ListProduct>
-          )}
+          }
           path="/"
           exact
         ></Route>
         <Route component={DetailsProduct} path="/Details/:id" exact></Route>
         <Route
-          component={(props) => (
+          element={
             <EditProduct onEdit={this.onEdit} {...props}></EditProduct>
-          )}
+          }
           path="/Edit/:id"
           exact
         ></Route>
         <Route
-          component={() => <AddProduct onAdd={this.onAdd}></AddProduct>}
+          element={ <AddProduct onAdd={this.onAdd}></AddProduct>}
           path="/Add"
           exact
         ></Route>

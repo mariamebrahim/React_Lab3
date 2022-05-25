@@ -8,7 +8,7 @@ let myArr = [
     name: "Product 1",
     price: "5000",
     quantity: 80,
-    productimag: "Product 1.jpg",
+    productimag: "pic.jpg",
     productdescription: "Product 1",
   },
   {
@@ -16,7 +16,7 @@ let myArr = [
     name: "Product 2",
     price: "5000",
     quantity: 80,
-    productimag: "Product 2.jpg",
+    productimag: "pic.jpg",
     productdescription: "Product 2",
   },
   {
@@ -24,7 +24,7 @@ let myArr = [
     name: "Product 3",
     price: "5000",
     quantity: 80,
-    productimag: "Product 3.jpg",
+    productimag: "pic.jpg",
     productdescription: "Product 3",
   },
   {
@@ -32,7 +32,7 @@ let myArr = [
     name: "Product 4",
     price: "5000",
     quantity: 80,
-    productimag: "Product 4.jpg",
+    productimag: "pic.jpg",
     productdescription: "Product 4",
   },
 ];
